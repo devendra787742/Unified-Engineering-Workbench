@@ -1,0 +1,46 @@
+{
+  "name": "unified-engineering-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Windows desktop engineering dashboard with C++17 numerical backend",
+  "main": "desktop/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis",
+    "pack:win": "electron-builder --win dir"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.unifiedengineering.workbench",
+    "productName": "Unified Engineering Workbench",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "desktop/**/*",
+      "frontend/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "build-desktop/workbench.exe",
+        "to": "backend/workbench.exe"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "Unified-Engineering-Workbench-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

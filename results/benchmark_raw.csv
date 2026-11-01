@@ -1,0 +1,6 @@
+logical_threads=5 cases=2000 elements_per_case=80 seed=20261101
+workers,median_seconds,speedup,efficiency,max_abs_difference_C
+1,0.218792,1,1,0
+2,0.113629,1.9255,0.96275,0
+3,0.076636,2.85495,0.951651,0
+4,0.0638736,3.42539,0.856348,0

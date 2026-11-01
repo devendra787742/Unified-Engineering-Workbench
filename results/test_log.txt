@@ -1,0 +1,24 @@
+Internal ctest changing into directory: /mnt/data/Unified_Engineering_Workbench/build
+Test project /mnt/data/Unified_Engineering_Workbench/build
+    Start 1: core_tests
+1/1 Test #1: core_tests .......................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec
+Validated 12 ASCII STL triangles
+Validated 5 temperature nodes
+N=10 max_midpoint_error_C=1.25 output=results/fea_N10.csv
+N=20 max_midpoint_error_C=0.3125 output=results/fea_N20.csv
+N=40 max_midpoint_error_C=0.078125 output=results/fea_N40.csv
+N=80 max_midpoint_error_C=0.0195312 output=results/fea_N80.csv
+h=0.46211715726 yhat=0.46211715726 loss=1.182541819
+gradients dw=-1.20946447524 db=-1.20946447524 dv=-0.710682047486 dc=-1.53788284274
+finite_difference dw=-1.20946447535 db=-1.20946447535 dv=-0.710682047433 dc=-1.53788284263
+updated w=0.620946447524 b=0.120946447524 v=1.07106820475 c=0.153788284274
+MCU | STM32 Nucleo mock | 3.3 V | USB CDC
+{"device":"STM32 Nucleo mock","status":"simulated_ok","sample":42}
+FPGA | Basys 3 mock | 3.3 V I/O | USB-JTAG
+RECOVERABLE: Recoverable timeout while connecting to Basys 3 mock
+JTAG | USB-Blaster-compatible mock | target-dependent | JTAG
+{"device":"USB-Blaster-compatible mock","status":"simulated_ok","sample":42}

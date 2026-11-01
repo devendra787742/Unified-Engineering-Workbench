@@ -1,0 +1,7 @@
+CPU(s):                                  5
+On-line CPU(s) list:                     0-4
+Model name:                              AMD EPYC 9V74 80-Core Processor
+Thread(s) per core:                      1
+Core(s) per socket:                      5
+Socket(s):                               1
+NUMA node0 CPU(s):                       0-4

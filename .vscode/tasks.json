@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"Configure Release","type":"shell","command":"cmake -S . -B build -DCMAKE_BUILD_TYPE=Release","problemMatcher":[]},
+    {"label":"Build Release","type":"shell","command":"cmake --build build --config Release","dependsOn":"Configure Release","problemMatcher":[]},
+    {"label":"Run packaged application (Windows)","type":"shell","command":"${workspaceFolder}/package/Launch.exe","problemMatcher":[]},
+    {"label":"Run tests","type":"shell","command":"ctest --test-dir build -C Release --output-on-failure","dependsOn":"Build Release","problemMatcher":[]}
+  ]
+}
